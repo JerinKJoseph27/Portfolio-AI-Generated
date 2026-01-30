@@ -1,6 +1,14 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This portfolio website was created using **Kimi AI** - an AI-powered development assistant that helped bring this project to life!
+
+If you're viewing this project, definitely check out [Kimi AI](https://kimi.ai) to see how AI can accelerate your development workflow.
+
+DO NOT COMPLETELY RELY ON IT OR IF YOU DO, MAKE SURE YOU KNOW HOW THINGS WERE MADE, USING WHAT COMPONENTS AND PROPERTIES, WHY, etc.
+
+## Tech Stack
+
+This project is built with React + TypeScript + Vite, providing a minimal setup with HMR and ESLint rules.
 
 Currently, two official plugins are available:
 
