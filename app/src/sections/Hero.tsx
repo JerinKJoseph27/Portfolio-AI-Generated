@@ -138,7 +138,13 @@ export default function Hero() {
             {/* Name */}
             <h1 
               ref={firstNameRef}
-              className="font-display text-[clamp(48px,8vw,96px)] font-bold text-text-primary leading-[0.95] tracking-[-0.02em]"
+              className="font-display text-[clamp(48px,8vw,96px)] font-bold leading-[0.95] tracking-[-0.02em]"
+              style={{
+                background: 'linear-gradient(135deg, #F4F7FF 0%, #B6FF2E 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}
             >
               JERIN
             </h1>
@@ -167,17 +173,20 @@ export default function Hero() {
             <div ref={ctaRef} className="flex flex-wrap gap-4">
               <Button 
                 onClick={scrollToWork}
-                className="bg-lime text-navy-900 hover:bg-lime-dark font-semibold px-8 py-6 rounded-xl text-base transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95 group"
+                className="bg-lime text-navy-900 hover:bg-lime-dark font-semibold px-8 py-6 rounded-xl text-base transition-all duration-300 hover:shadow-[0_0_30px_rgba(182,255,46,0.4),0_0_60px_rgba(182,255,46,0.2)] hover:scale-105 active:scale-95 group relative overflow-hidden"
               >
-                View Work
-                <ArrowDown className="ml-2 w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+                <span className="absolute inset-0 bg-gradient-to-r from-lime to-yellow-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <span className="relative flex items-center">
+                  View Work
+                  <ArrowDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
+                </span>
               </Button>
               <Button 
                 variant="outline"
-                className="border-white/20 text-text-primary hover:bg-white/10 hover:border-lime/40 px-8 py-6 rounded-xl text-base transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(182,255,46,0.1)] group"
+                className="border-white/20 text-text-primary hover:bg-white/10 hover:border-lime/60 px-8 py-6 rounded-xl text-base transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_25px_rgba(182,255,46,0.15)] group backdrop-blur-sm"
                 onClick={() => window.open('https://github.com/JerinKJoseph27', '_blank')}
               >
-                <Github className="mr-2 w-4 h-4 group-hover:rotate-12 transition-transform" />
+                <Github className="mr-2 w-4 h-4 group-hover:rotate-[360deg] transition-transform duration-500" />
                 GitHub
               </Button>
             </div>

@@ -97,10 +97,10 @@ export default function Contact() {
             <div className="space-y-6 mb-10">
               <a 
                 href="mailto:jerinkjoseph27@gmail.com"
-                className="flex items-center gap-4 group hover:translate-x-2 transition-all duration-300"
+                className="flex items-center gap-4 group hover:translate-x-2 transition-all duration-300 p-3 rounded-xl hover:bg-white/5"
               >
-                <div className="w-12 h-12 rounded-xl bg-lime/10 flex items-center justify-center group-hover:bg-lime/20 group-hover:scale-110 transition-all duration-300">
-                  <Mail className="w-5 h-5 text-lime" />
+                <div className="w-12 h-12 rounded-xl bg-lime/10 flex items-center justify-center group-hover:bg-lime/20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(182,255,46,0.3)]">
+                  <Mail className="w-5 h-5 text-lime group-hover:scale-110 transition-transform" />
                 </div>
                 <div>
                   <div className="text-text-secondary text-sm">Email</div>
@@ -137,23 +137,23 @@ export default function Contact() {
                 href={`https://github.com/${metadata.githubUsername}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-lime/20 hover:text-lime transition-all duration-300 hover:scale-110 hover:rotate-12 active:scale-95"
+                className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-lime/20 hover:text-lime transition-all duration-300 hover:scale-110 hover:rotate-12 active:scale-95 border border-white/5 hover:border-lime/50 hover:shadow-[0_0_20px_rgba(182,255,46,0.3)] group"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a 
                 href={metadata.linkedIn}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-lime/20 hover:text-lime transition-all duration-300 hover:scale-110 hover:rotate-12 active:scale-95"
+                className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-lime/20 hover:text-lime transition-all duration-300 hover:scale-110 hover:rotate-12 active:scale-95 border border-white/5 hover:border-lime/50 hover:shadow-[0_0_20px_rgba(182,255,46,0.3)] group"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a 
                 href="mailto:jerinkjoseph27@gmail.com"
-                className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-lime/20 hover:text-lime transition-all duration-300 hover:scale-110 hover:rotate-12 active:scale-95"
+                className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-lime/20 hover:text-lime transition-all duration-300 hover:scale-110 hover:rotate-12 active:scale-95 border border-white/5 hover:border-lime/50 hover:shadow-[0_0_20px_rgba(182,255,46,0.3)] group"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
             </div>
           </div>
