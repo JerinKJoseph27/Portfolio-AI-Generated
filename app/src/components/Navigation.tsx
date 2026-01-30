@@ -34,7 +34,7 @@ export default function Navigation() {
       <nav 
         className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
           isScrolled 
-            ? 'bg-navy-900/90 backdrop-blur-2xl border-b border-white/10 shadow-xl' 
+            ? 'bg-navy-900/80 backdrop-blur-3xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]' 
             : 'bg-transparent'
         }`}
       >
@@ -46,9 +46,10 @@ export default function Navigation() {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="font-display text-xl font-bold text-text-primary hover:text-lime transition-all duration-300 hover:scale-105 active:scale-95"
+            className="font-display text-xl font-bold text-text-primary hover:text-lime transition-all duration-300 hover:scale-110 active:scale-95 relative group"
           >
-            JKJ
+            <span className="relative z-10">JKJ</span>
+            <span className="absolute inset-0 bg-lime/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
 
           {/* Desktop Links */}
